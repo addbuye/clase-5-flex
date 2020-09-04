@@ -1,0 +1,96 @@
+/*master.css*/
+
+/* consideraciones css globales*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: auto auto;
+    /*arriba abajo 0, y los costados es automatico*/
+}
+
+img {
+ width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+/*----   css del header----*/
+.header {
+display: flex;/*simplemente dispone un elemento al lado del otro*/
+background-color: rgb(143, 143, 144);
+
+}
+.logo {
+    width: 150%;    
+
+}
+.opciones {
+    display: flex;
+    justify-content: space-between;
+}
+.menu {
+
+    width: 850%;
+    
+}
+
+.opciones li a {
+    color: black;
+    font-family: monospace;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: xxx-large;
+    text-align: center;
+    
+}
+
+.opciones li a:hover {  /*cuando paso por arriba del cursor*/
+    text-decoration-line: underline;
+}
+
+/*-------  css imagen--------*/
+.imagen {
+    background-image: url('../img/presentacionFrascos.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /*queda fija, no sigue con el scroll*/
+    height: 1000px;
+}
+/*______ productos ccss */
+
+.productos {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center ;
+    background-color: rgb(143, 143, 144);
+}
+.productos article {
+    padding: 10px;
+    
+}
+.productos article img {
+    border-radius: 20px;
+    height: 100%;
+    
+}
+
+/*-------  css footer--------*/
+
+.footer {
+    height: 100px;
+    background-color: rgb(143, 143, 144);
+    color: black;
+    display: flex;
+    /* para alinear*/
+    
+    flex-direction: row;
+    
+}
+ 
+h2 a {
+    color: black;
+    font-weight: bolder;
+}
